@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página com Flexbox</title>
+  <style>
+    /* Estilo do contêiner flexível */
+    .flex-container {
+      display: flex;
+      /* Ativa o Flexbox */
+      justify-content: center;
+      /* Centraliza os itens horizontalmente */
+      align-items: center;
+      /* Centraliza os itens verticalmente */
+      height: 100vh;
+      /* Faz o contêiner ocupar a altura total da tela */
+      border: 2px solid #00f42d;
+      /* Apenas para visualização */
+      flex-direction: row;
+      /* Alinha os itens na horizontal */
+      gap: 80px;
+      /* Espaço entre os itens */
+    }
+
+    /* Estilo dos itens dentro do contêiner */
+    .item {
+      background-color: #4CAF50;
+      /* Cor de fundo */
+      color: white;
+      /* Cor do texto */
+      padding: 20px;
+      /* Espaçamento interno */
+      border-radius: 10px;
+      /* Bordas arredondadas */
+      font-size: 18px;
+      /* Tamanho da fonte */
+      text-align: center;
+      /* Alinha o texto no centro */
+      width: 100px;
+      /* Largura fixa para os itens */
+    }
+
+    /* Responsividade: Quando a tela for pequena, os itens se alinham na coluna */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column-reverse;
+        /* Alinha os itens na vertical */
+      }
+    }
+    .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px auto 40px;
+  gap: 230px;
+}
+
+.header { grid-area: header; background: lightgray; }
+.menu { grid-area: menu; background: lightcoral; }
+.main { grid-area: main; background: lightgreen; }
+.footer { grid-area: footer; background: lightskyblue; }
+
+    </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="item">abrir 1</div>
+    <div class="item">fechar 2</div>
+    <div class="item">minimizar 3</div>
+    <!--<div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>-->
+      <div class="container">
+        <div class="header">Cabeçalho</div>
+        <div class="menu">Menu</div>
+        <div class="main">Conteúdo</div>
+        <div class="footer">Rodapé</div>
+      </div>
+      
+    </div>
+   </body>
+
+</html>
