@@ -1,0 +1,18 @@
+// Estrutura de Condição
+let numero = Math.floor(Math.random() * 10); // Gera um número aleatório entre 0 e 9
+
+if (numero > 5) {
+    console.log(`O número ${numero} é maior que 5`);
+} else if (numero === 5) {
+    console.log(`O número ${numero} é igual a 5`);
+} else {
+    console.log(`O número ${numero} é menor que 5`);
+}
+
+// Estrutura de Laço (Loop)
+console.log("Contagem regressiva:");
+for (let i = 5; i >= 1; i--) {
+    console.log(i);
+}
+
+console.log("FIM!");
