@@ -1,0 +1,37 @@
+S3A3
+Aplicando o modelo SMART (Específico, Mensurável, Atingível, Relevante e Temporal) para o tema de um site informativo que visa otimizar a comunicação da Escola João Vieira, temos:
+
+1. Específico (Specific)
+
+Criar um site informativo que centralize todas as informações relevantes sobre a Escola João Vieira, incluindo avisos, calendário de eventos, informações sobre cursos, resultados de exames, notícias, e a comunicação com pais e alunos.
+
+2. Mensurável (Measurable)
+
+Medir o sucesso do site através de indicadores como:
+
+
+Aumento de 30% no acesso ao site mensalmente.
+
+Redução de 20% nas dúvidas frequentes dos pais, com base na quantidade de mensagens recebidas.
+
+Aumento de 15% no número de interações com o site, como inscrições em eventos ou consultas de informações.
+
+
+
+3. Atingível (Achievable)
+
+Assegurar que o site seja desenvolvido por uma equipe de TI interna ou contratada, com uma plataforma de fácil atualização, de modo que os responsáveis pela escola possam facilmente adicionar ou editar conteúdo. A implementação de ferramentas de comunicação, como formulários e chat, será simples e direta.
+
+4. Relevante (Relevant)
+
+A comunicação eficaz com pais, alunos e comunidade escolar é essencial para o bom funcionamento da escola. O site irá garantir que todos os envolvidos tenham acesso fácil e rápido às informações importantes, melhorando o engajamento e a satisfação.
+
+5. Temporal (Time-bound)
+
+O site deverá ser lançado dentro de 4 meses, com a primeira versão funcionando no prazo de 3 meses para testes e ajustes. A meta de atingir os indicadores de sucesso (aumento de acessos e interações) deverá ser analisada após 6 meses de uso contínuo.
+
+Exemplo de meta SMART:
+
+"Desenvolver e lançar o site informativo da Escola João Vieira dentro de 4 meses, com o objetivo de aumentar os acessos mensais em 30% e reduzir as dúvidas frequentes dos pais em 20% dentro de 6 meses após o lançamento."
+
+Esse modelo ajudará a organizar o projeto e definir claramente os objetivos do site. 
