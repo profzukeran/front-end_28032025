@@ -1,0 +1,32 @@
+S5 – Aula 2 – Registro
+
+Materiais Necessarios
+- Alicate de Cripagem
+-conectores Rj45
+-Cabo de rede (cat5e ou cat6e)
+-testador de cabo de rede
+
+Passo1
+- use o alicate de corte para cortar o cabo no
+     tamanho adequado
+Passo2
+- remover a capa externa do cabo
+passo3
+- Desembaralhar e organizar os fios
+ - 1 branco e verde
+ - 2 verde
+ - 3 Branco-Laranja
+ - 4 Azul
+ - 5 Branco-zul
+ - 6 Laranja
+ - 7 branco- Marrom
+ - 8 marrom
+passo4
+ - inserir os fios no Conector RJ45
+passo 5
+ - Crimpar o conector
+Passo6
+-testar o cabo
+
+Douglassantos01@prof.educacao.sp.gov.br
+
