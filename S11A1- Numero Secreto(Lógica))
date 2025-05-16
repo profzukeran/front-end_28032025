@@ -1,0 +1,26 @@
+import random
+
+numero_secreto = random.randint(1, 50)
+
+tentativas = 0
+limite_tentativas = 5
+
+print("🎯 Jogo de Adivinhação!")
+print("Tente adivinhar o número entre 1 e 50. Você tem 5 tentativas.")
+
+# Laço de tentativas
+while tentativas < limite_tentativas:
+    palpite = int(input(f"\nTentativa {tentativas + 1}: Digite seu palpite: "))
+    tentativas += 1
+
+    if palpite == numero_secreto:
+        print("✅ Parabéns! Você acertou o número!")
+        break
+    elif palpite < numero_secreto:
+        print("🔼 Dica: Tente um número maior.")
+    else:
+        print("🔽 Dica: Tente um número menor.")
+
+# Se o jogador não acertar em 5 tentativas
+if palpite != numero_secreto:
+    print(f"\n❌ Fim de jogo! O número era {numero_secreto}.")
