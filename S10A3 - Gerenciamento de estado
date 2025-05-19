@@ -1,0 +1,114 @@
+// src/store/actions.js
+import { ADD_ITEM, REMOVE_ITEM, CLEAR_CART } from './actionTypes';
+
+export const addItem = (item) => ({ type: ADD_ITEM, payload: item });
+export const removeItem = (id) => ({ type: REMOVE_ITEM, payload: id });
+export const clearCart = () => ({ type: CLEAR_CART });
+______________________________________________________________________________________________________--
+
+// src/store/actionTypes.js
+export const ADD_ITEM = 'ADD_ITEM';
+export const REMOVE_ITEM = 'REMOVE_ITEM';
+export const CLEAR_CART = 'CLEAR_CART';
+
+---------------------------------------------------------------------------------------------------------------
+
+// src/store/index.js
+import { createStore } from 'redux';
+import cartReducer from './reducer';
+
+export const store = createStore(cartReducer);
+
+
+------------------------------------------------------------------------------------
+
+// src/store/reducer.js
+import { ADD_ITEM, REMOVE_ITEM, CLEAR_CART } from './actionTypes';
+
+const initialState = {
+  cartItems: [],
+};
+
+function cartReducer(state = initialState, action) {
+  switch (action.type) {
+    case ADD_ITEM: {
+      const existingItem = state.cartItems.find(item => item.id === action.payload.id);
+      if (existingItem) {
+        return {
+          ...state,
+          cartItems: state.cartItems.map(item =>
+            item.id === action.payload.id
+              ? { ...item, quantity: item.quantity + action.payload.quantity }
+              : item
+          ),
+        };
+      }
+      return {
+        ...state,
+        cartItems: [...state.cartItems, action.payload],
+      };
+    }
+    case REMOVE_ITEM:
+      return {
+        ...state,
+        cartItems: state.cartItems.filter(item => item.id !== action.payload),
+      };
+    case CLEAR_CART:
+      return {
+        ...state,
+        cartItems: [],
+      };
+    default:
+      return state;
+  }
+}
+
+export default cartReducer;
+
+----------------------------------------------------------------------------
+
+// src/components/ShoppingCart.js
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addItem, removeItem, clearCart } from '../store/actions';
+
+const ShoppingCart = () => {
+  const cartItems = useSelector((state) => state.cartItems);
+  const dispatch = useDispatch();
+
+  const handleAdd = (item) => {
+    dispatch(addItem(item));
+  };
+
+  const handleRemove = (id) => {
+    dispatch(removeItem(id));
+  };
+
+  const handleClearCart = () => {
+    dispatch(clearCart());
+  };
+
+  return (
+    <div>
+      <h2>Carrinho de Compras</h2>
+      <ul>
+        {cartItems.map(item => (
+          <li key={item.id}>
+            <strong>{item.name}</strong> - Quantidade: {item.quantity} - Preço total: R$ {(item.price * item.quantity).toFixed(2)}
+            <button onClick={() => handleAdd({ ...item, quantity: 1 })}>Adicionar</button>
+            <button onClick={() => handleRemove(item.id)}>Remover</button>
+          </li>
+        ))}
+      </ul>
+      <button onClick={() => handleAdd({ id: 1, name: 'Mouse Gamer', price: 150, quantity: 1 })}>
+  Adicionar Item de Teste
+</button>
+
+      {cartItems.length > 0 && <button onClick={handleClearCart}>Limpar Carrinho</button>}
+    </div>
+  );
+};
+
+export default ShoppingCart;
+
+
