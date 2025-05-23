@@ -1,0 +1,25 @@
+[Início]
+   ↓
+[Usuário acessa o sistema] ( NETFLIX )
+   ↓
+[Captura e valida IP]
+   ↓
+[IP é válido?]───Não──▶ [Bloquear acesso / Registrar erro]
+       │
+     Sim
+       ↓
+[Consultar país via GeoIP]
+   ↓
+[País identificado?]───Não──▶ [Permissões mínimas / Verificação manual]
+       │
+     Sim
+       ↓
+[País permitido?]───Não──▶ [Restringir funcionalidades / Avisar usuário]
+       │
+     Sim
+       ↓
+[Aplicar permissões do país]
+   ↓
+[Permitir acesso]
+   ↓
+[Fim]
