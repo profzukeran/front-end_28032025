@@ -1,0 +1,28 @@
+Entidades Principais
+
+Livro (Livro)
+----------------
+- ID_Livro (PK)
+ - Título
+ - Autor
+ -Editora
+ -AnoPublicacao
+
+
+Membro (usuário)
+-----------------------
+-ID_Membro (pk)
+ - nome
+ - endereco
+ - email
+ - sexo
+ - idade
+ - dataCadastro
+
+Emprestimos (relacionamento)
+--------------------------------- 
+ - ID_Emprestimos (pk)
+ - ID_Livro (fk)
+- DataEmprestimo
+- DataDevolucao
+- status
