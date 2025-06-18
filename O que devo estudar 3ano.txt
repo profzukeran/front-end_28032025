@@ -1,0 +1,121 @@
+O que estudar para prova de Frot-end e Projeto Multi
+
+
+1. React (Biblioteca JavaScript)
+Conceitos de componentes funcionais
+
+Diferença entre props e state
+
+Atualização de estado (uso de useState)
+
+Testes em React com Jest e React Testing Library
+
+Utilização de eventos (onClick) para atualizar estado
+
+Comunicação entre componente pai e filho
+
+2. CSS: Flexbox vs Grid Layout
+Flexbox: ideal para layout unidimensional (linhas OU colunas)
+
+CSS Grid: ideal para layout bidimensional (linhas E colunas)
+
+Quando usar Grid e quando usar Flexbox
+
+Criação de galerias, menus, e seções em grade
+
+3. Ferramentas de Desenvolvimento
+Redux DevTools: inspecionar o estado, ações e histórico do Redux
+
+redux-thunk e redux-saga: middlewares para efeitos colaterais e ações assíncronas
+
+composeWithDevTools: integrar ferramentas de desenvolvimento ao Redux
+
+4. Testes de Software
+Testes unitários: objetivos e vantagens
+
+Ferramentas: Jest (mantido pelo Facebook), React Testing Library
+
+O que NÃO é vantagem dos testes unitários
+
+5. APIs e Integração de Serviços Externos
+Conceito de API (Application Programming Interface)
+
+Comunicação com serviços como previsão do tempo, lista de produtos, etc.
+
+6. Otimização de Performance em Aplicações Web
+Técnicas:
+
+Lazy Loading – carregar componentes sob demanda
+
+Code Splitting – dividir o código em partes menores
+
+Minificação – reduzir o tamanho dos arquivos (remover espaços, nomes longos etc.)
+
+Objetivos: reduzir tempo de resposta, escalabilidade, economia de recursos
+
+
+-----------------------------------------------------------------------------------------
+Projeto Multidisciplinar
+
+
+1. Análise de Viabilidade
+O que é: avaliação inicial antes do desenvolvimento de um sistema para verificar se o projeto é viável tecnicamente, economicamente e estrategicamente.
+
+Vantagens:
+
+Evitar gastos desnecessários
+
+Avaliar custos x benefícios
+
+Reduzir riscos do projeto
+
+2. Custos Diretos e Indiretos
+Custos Diretos: associados diretamente ao projeto (ex: salários da equipe de desenvolvimento, compra de servidores).
+
+Custos Indiretos: são compartilhados ou não ligados diretamente a uma única atividade (ex: energia elétrica, aluguel do escritório).
+
+3. Viabilidade Financeira
+Objetivo: saber se o projeto é financeiramente sustentável.
+
+Avalia: custos totais, possível receita, e retorno sobre o investimento.
+
+4. Compliance Ambiental
+Significa estar em conformidade com leis ambientais, adotando práticas sustentáveis e evitando impactos negativos ao meio ambiente.
+
+Parte de um compromisso com a responsabilidade socioambiental.
+
+5. Público-Alvo
+Definir o público-alvo ajuda a:
+
+Criar um produto alinhado às necessidades dos usuários
+
+Evitar funcionalidades desnecessárias
+
+Melhorar a experiência do usuário (UX)
+
+6. MVP – Produto Mínimo Viável
+MVP Mágico de Oz: parece automatizado, mas tem operações manuais por trás.
+
+MVP Single Feature: versão com apenas uma funcionalidade principal para validar rapidamente com baixo custo.
+
+Definição geral de MVP: versão mínima de um produto com o essencial para testar uma ideia com usuários reais.
+
+7. MoSCoW – Técnica de Priorização
+Método para priorizar requisitos de um projeto:
+
+Must have (deve ter)
+
+Should have (deveria ter)
+
+Could have (poderia ter)
+
+Won’t have for now (não terá agora)
+
+8. Stakeholders (Partes Interessadas)
+Pessoas ou grupos que:
+
+São afetados pelo projeto
+
+Têm interesse no seu sucesso
+
+Exemplos: usuários, clientes, gerentes, professores, pais, alunos, equipe de TI, patrocinadores.
